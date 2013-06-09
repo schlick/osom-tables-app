@@ -1,0 +1,11 @@
+= osom_table_for @things, class: 'table table-striped table-condenced table-bordered', push: true do |t|
+
+  = t.head do
+    %th{order: 'name'} Name
+    %th{order: 'desc'} Description
+    %th{order: 'size'} Size
+
+  = t.body do |thing|
+    %td= thing.name
+    %td= thing.description
+    %td= thing.size
