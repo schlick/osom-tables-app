@@ -8,3 +8,6 @@
 
 Thing.destroy_all
 100.times { |i| Thing.create(name: "Thing #{i}", description: "Thing Desc #{i}", size: i) }
+
+Item.destroy_all
+100.times { |i| Item.create(name: "Item #{i}", description: "Item Desc #{i}", size: i) }
