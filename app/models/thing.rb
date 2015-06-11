@@ -8,7 +8,7 @@ class Thing < ActiveRecord::Base
     when 'name' then order("name #{sort}")
     when 'desc' then order("description #{sort}")
     when 'size' then order("size #{sort}")
-    else             scopped     # fallback
+    else             scoped     # fallback
     end
   }
 end
