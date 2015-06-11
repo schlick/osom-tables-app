@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Thing.destroy_all
+100.times { |i| Thing.create(name: "Thing #{i}", description: "Thing Desc #{i}", size: i) }
