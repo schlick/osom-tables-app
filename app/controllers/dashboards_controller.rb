@@ -1,7 +1,7 @@
 class DashboardsController < ApplicationController
   def index
-    @things = Thing.page(params[:page]).per(10)#.order_by(params[:order])
-    @items = Item.page(params[:page]).per(10)#.order_by(params[:order])
+    # @things = Thing.page(params[:page]).per(10)#.order_by(params[:order])
+    # @items = Item.page(params[:page]).per(10)#.order_by(params[:order])
 
     #sleep 0.5
 

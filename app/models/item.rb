@@ -2,6 +2,8 @@ class Item < ActiveRecord::Base
   attr_accessible :name, :description, :size
 
   scope :order_by, ->(param) {
+    return scoped if param.blank?
+
     sort = param.ends_with?('_desc') ? 'DESC' : 'ASC'
 
     case param.sub(/_(desc|asc)$/, '')

@@ -7,7 +7,8 @@ gem 'sqlite3'
 gem 'haml'
 gem 'bootstrap-sass'
 gem 'kaminari'
-gem 'osom-tables'
+# gem 'osom-tables'
+gem 'osom-tables', '~> 2.0.0', github: 'schlick/osom-tables', branch: 'fix/popstate'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -17,3 +18,4 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'byebug'

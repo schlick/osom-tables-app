@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/schlick/osom-tables.git
+  revision: e9eb860221f0613e5a0cd8fe60ad711180d7ac1d
+  branch: fix/popstate
+  specs:
+    osom-tables (2.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -32,6 +39,8 @@ GEM
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     builder (3.0.4)
+    byebug (5.0.0)
+      columnize (= 0.9.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -39,6 +48,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    columnize (0.9.0)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -58,10 +68,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.23)
-    minitest (4.7.4)
     multi_json (1.7.6)
-    osom-tables (1.0.0)
-      minitest
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -114,11 +121,12 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  byebug
   coffee-rails (~> 3.2.1)
   haml
   jquery-rails
   kaminari
-  osom-tables
+  osom-tables (~> 2.0.0)!
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   sqlite3
